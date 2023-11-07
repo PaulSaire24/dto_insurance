@@ -3,7 +3,7 @@ package com.bbva.rbvd.dto.insurance.commons;
 import java.io.Serializable;
 
 public class AddressesDTO implements Serializable {
-    LocationDTO location;
+    private LocationDTO location;
 
     public LocationDTO getLocation() {
         return location;

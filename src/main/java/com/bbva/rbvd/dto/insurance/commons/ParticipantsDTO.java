@@ -5,17 +5,17 @@ import java.util.Date;
 import java.util.List;
 
 public class ParticipantsDTO implements Serializable {
-    String customerId;
-    DocumentDTO document;
-    String firstName;
-    String middleName;
-    String lastName;
-    Date birthDate;
-    GenderDTO gender;
-    List<ContactDetailsDTO> contactDetails;
-    List<AddressesDTO> addresses;
-    ParticipantTypeDTO participantType;
-    DictumDTO dictum;
+    private String customerId;
+    private DocumentDTO document;
+    private String firstName;
+    private String middleName;
+    private String lastName;
+    private Date birthDate;
+    private GenderDTO gender;
+    private List<ContactDetailsDTO> contactDetails;
+    private List<AddressesDTO> addresses;
+    private ParticipantTypeDTO participantType;
+    private DictumDTO dictum;
 
     public String getCustomerId() {
         return customerId;

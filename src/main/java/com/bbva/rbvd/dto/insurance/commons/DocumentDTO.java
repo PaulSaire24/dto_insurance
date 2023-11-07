@@ -3,8 +3,8 @@ package com.bbva.rbvd.dto.insurance.commons;
 import java.io.Serializable;
 
 public class DocumentDTO implements Serializable {
-    DocumentTypeDTO documentType;
-    String documentNumber;
+    private DocumentTypeDTO documentType;
+    private String documentNumber;
 
     public DocumentTypeDTO getDocumentType() {
         return documentType;

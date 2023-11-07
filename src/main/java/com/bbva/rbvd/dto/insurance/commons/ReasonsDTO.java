@@ -3,8 +3,8 @@ package com.bbva.rbvd.dto.insurance.commons;
 import java.io.Serializable;
 
 public class ReasonsDTO implements Serializable {
-    String id;
-    String description;
+    private String id;
+    private String description;
 
     public String getId() {
         return id;

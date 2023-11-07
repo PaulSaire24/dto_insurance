@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.List;
 
 public class DictumDTO implements Serializable {
-    Boolean isApproved;
-    List<ReasonsDTO> reasons;
+    private Boolean isApproved;
+    private List<ReasonsDTO> reasons;
 
     public Boolean getApproved() {
         return isApproved;
