@@ -1,8 +1,9 @@
 package com.bbva.rbvd.dto.insurance.commons;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class DictumDTO {
+public class DictumDTO implements Serializable {
     Boolean isApproved;
     List<ReasonsDTO> reasons;
 

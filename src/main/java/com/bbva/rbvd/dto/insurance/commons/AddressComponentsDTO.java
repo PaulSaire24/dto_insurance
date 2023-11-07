@@ -1,8 +1,9 @@
 package com.bbva.rbvd.dto.insurance.commons;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class AddressComponentsDTO {
+public class AddressComponentsDTO implements Serializable {
     private List<String> componentTypes;
     private String code;
     private String name;

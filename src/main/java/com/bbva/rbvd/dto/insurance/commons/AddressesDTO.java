@@ -1,6 +1,8 @@
 package com.bbva.rbvd.dto.insurance.commons;
 
-public class AddressesDTO {
+import java.io.Serializable;
+
+public class AddressesDTO implements Serializable {
     LocationDTO location;
 
     public LocationDTO getLocation() {

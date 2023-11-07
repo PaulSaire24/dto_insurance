@@ -1,6 +1,8 @@
 package com.bbva.rbvd.dto.insurance.commons;
 
-public class ParticipantTypeDTO {
+import java.io.Serializable;
+
+public class ParticipantTypeDTO implements Serializable {
     String id;
 
     public String getId() {

@@ -1,6 +1,8 @@
 package com.bbva.rbvd.dto.insurance.commons;
 
-public class GenderDTO {
+import java.io.Serializable;
+
+public class GenderDTO implements Serializable {
     String id;
 
     public String getId() {

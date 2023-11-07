@@ -1,6 +1,8 @@
 package com.bbva.rbvd.dto.insurance.commons;
 
-public class DocumentDTO {
+import java.io.Serializable;
+
+public class DocumentDTO implements Serializable {
     DocumentTypeDTO documentType;
     String documentNumber;
 

@@ -1,9 +1,10 @@
 package com.bbva.rbvd.dto.insurance.commons;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class ParticipantsDTO {
+public class ParticipantsDTO implements Serializable {
     String customerId;
     DocumentDTO document;
     String firstName;
