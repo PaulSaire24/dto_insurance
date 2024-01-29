@@ -5,72 +5,34 @@ import java.util.Date;
 import java.util.List;
 
 public class ParticipantsDTO implements Serializable {
-    private String customerId;
-    private DocumentDTO document;
-    private String firstName;
-    private String middleName;
-    private String lastName;
-    private Date birthDate;
-    private GenderDTO gender;
+    private ParticipantTypeDTO participantType;
+    private PersonDTO person;
+    private List<IdentityDocumentDTO> identityDocument;
     private List<ContactDetailsDTO> contactDetails;
     private List<AddressesDTO> addresses;
-    private ParticipantTypeDTO participantType;
-    private DictumDTO dictum;
 
-    public String getCustomerId() {
-        return customerId;
+    public ParticipantTypeDTO getParticipantType() {
+        return participantType;
     }
 
-    public void setCustomerId(String customerId) {
-        this.customerId = customerId;
+    public void setParticipantType(ParticipantTypeDTO participantType) {
+        this.participantType = participantType;
     }
 
-    public DocumentDTO getDocument() {
-        return document;
+    public PersonDTO getPerson() {
+        return person;
     }
 
-    public void setDocument(DocumentDTO document) {
-        this.document = document;
+    public void setPerson(PersonDTO person) {
+        this.person = person;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public List<IdentityDocumentDTO> getIdentityDocument() {
+        return identityDocument;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getMiddleName() {
-        return middleName;
-    }
-
-    public void setMiddleName(String middleName) {
-        this.middleName = middleName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public Date getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    public GenderDTO getGender() {
-        return gender;
-    }
-
-    public void setGender(GenderDTO gender) {
-        this.gender = gender;
+    public void setIdentityDocument(List<IdentityDocumentDTO> identityDocument) {
+        this.identityDocument = identityDocument;
     }
 
     public List<ContactDetailsDTO> getContactDetails() {
@@ -89,36 +51,14 @@ public class ParticipantsDTO implements Serializable {
         this.addresses = addresses;
     }
 
-    public ParticipantTypeDTO getParticipantType() {
-        return participantType;
-    }
-
-    public void setParticipantType(ParticipantTypeDTO participantType) {
-        this.participantType = participantType;
-    }
-
-    public DictumDTO getDictum() {
-        return dictum;
-    }
-
-    public void setDictum(DictumDTO dictum) {
-        this.dictum = dictum;
-    }
-
     @Override
     public String toString() {
         return "ParticipantsDTO{" +
-                "customerId='" + customerId + '\'' +
-                ", document=" + document +
-                ", firstName='" + firstName + '\'' +
-                ", middleName='" + middleName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", birthDate=" + birthDate +
-                ", gender=" + gender +
+                "participantType=" + participantType +
+                ", person=" + person +
+                ", identityDocument=" + identityDocument +
                 ", contactDetails=" + contactDetails +
                 ", addresses=" + addresses +
-                ", participantType=" + participantType +
-                ", dictum=" + dictum +
                 '}';
     }
 }
