@@ -15,7 +15,10 @@
 	<properties>
 		<osgi.version.manifest>0.0</osgi.version.manifest>
 		<sonar.coverage.exclusions>
-			/src/main/java/com/bbva/rbvd/dto/insurance/**/**.java
+			/src/main/java/com/bbva/rbvd/dto/insurance/commons/**.java,
+			/src/main/java/com/bbva/rbvd/dto/insurance/dao/**.java,
+			/src/main/java/com/bbva/rbvd/dto/insurance/group/**.java,
+			/src/main/java/com/bbva/rbvd/dto/insurance/utils/**.java
 		</sonar.coverage.exclusions>
 	</properties>
 	<dependencies>
