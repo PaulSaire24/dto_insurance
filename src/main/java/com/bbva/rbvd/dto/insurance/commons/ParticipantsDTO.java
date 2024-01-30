@@ -7,7 +7,7 @@ import java.util.List;
 public class ParticipantsDTO implements Serializable {
     private ParticipantTypeDTO participantType;
     private PersonDTO person;
-    private List<IdentityDocumentDTO> identityDocument;
+    private List<IdentityDocumentDTO> identityDocuments;
     private List<ContactDetailsDTO> contactDetails;
     private List<AddressesDTO> addresses;
 
@@ -27,12 +27,12 @@ public class ParticipantsDTO implements Serializable {
         this.person = person;
     }
 
-    public List<IdentityDocumentDTO> getIdentityDocument() {
-        return identityDocument;
+    public List<IdentityDocumentDTO> getIdentityDocuments() {
+        return identityDocuments;
     }
 
-    public void setIdentityDocument(List<IdentityDocumentDTO> identityDocument) {
-        this.identityDocument = identityDocument;
+    public void setIdentityDocuments(List<IdentityDocumentDTO> identityDocuments) {
+        this.identityDocuments = identityDocuments;
     }
 
     public List<ContactDetailsDTO> getContactDetails() {
@@ -56,7 +56,7 @@ public class ParticipantsDTO implements Serializable {
         return "ParticipantsDTO{" +
                 "participantType=" + participantType +
                 ", person=" + person +
-                ", identityDocument=" + identityDocument +
+                ", identityDocument=" + identityDocuments +
                 ", contactDetails=" + contactDetails +
                 ", addresses=" + addresses +
                 '}';
