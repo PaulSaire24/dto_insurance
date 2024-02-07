@@ -58,4 +58,16 @@ public class CustomerInformationDAO implements Serializable {
     public void setInsuranceBusinessName(String insuranceBusinessName) {
         this.insuranceBusinessName = insuranceBusinessName;
     }
+
+    @Override
+    public String toString() {
+        return "CustomerInformationDAO{" +
+                "insuranceProductType='" + insuranceProductType + '\'' +
+                ", contactEmailDesc='" + contactEmailDesc + '\'' +
+                ", customerPhoneDesc='" + customerPhoneDesc + '\'' +
+                ", clientLastName='" + clientLastName + '\'' +
+                ", insuredCustomerName='" + insuredCustomerName + '\'' +
+                ", insuranceBusinessName='" + insuranceBusinessName + '\'' +
+                '}';
+    }
 }

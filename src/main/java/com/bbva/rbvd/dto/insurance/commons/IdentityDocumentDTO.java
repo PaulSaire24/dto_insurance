@@ -21,4 +21,12 @@ public class IdentityDocumentDTO implements Serializable {
     public void setDocumentType(DocumentTypeDTO documentType) {
         this.documentType = documentType;
     }
+
+    @Override
+    public String toString() {
+        return "IdentityDocumentDTO{" +
+                "value='" + value + '\'' +
+                ", documentType=" + documentType +
+                '}';
+    }
 }

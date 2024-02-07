@@ -34,4 +34,13 @@ public class ParticipantGroupDTO implements Serializable {
     public void setDocumentType(String documentType) {
         this.documentType = documentType;
     }
+
+    @Override
+    public String toString() {
+        return "ParticipantGroupDTO{" +
+                "documentNumber='" + documentNumber + '\'' +
+                ", documentType='" + documentType + '\'' +
+                ", participantList=" + participantList +
+                '}';
+    }
 }

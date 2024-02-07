@@ -22,4 +22,12 @@ public class LocationDTO implements Serializable {
     public void setLocationTypes(List<String> locationTypes) {
         this.locationTypes = locationTypes;
     }
+
+    @Override
+    public String toString() {
+        return "LocationDTO{" +
+                "addressComponent=" + addressComponent +
+                ", locationTypes=" + locationTypes +
+                '}';
+    }
 }
