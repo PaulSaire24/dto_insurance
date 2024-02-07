@@ -103,4 +103,21 @@ public class PersonDTO implements Serializable {
     public void setCreationDate(Date creationDate) {
         this.creationDate = creationDate;
     }
+
+    @Override
+    public String toString() {
+        return "PersonDTO{" +
+                "customerId='" + customerId + '\'' +
+                ", personType='" + personType + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", secondLastName='" + secondLastName + '\'' +
+                ", birthDate=" + birthDate +
+                ", gender=" + gender +
+                ", description='" + description + '\'' +
+                ", legalName='" + legalName + '\'' +
+                ", creationDate=" + creationDate +
+                '}';
+    }
 }

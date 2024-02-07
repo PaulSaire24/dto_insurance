@@ -21,4 +21,12 @@ public class ContactDetailsDTO implements Serializable {
     public void setContactType(String contactType) {
         this.contactType = contactType;
     }
+
+    @Override
+    public String toString() {
+        return "ContactDetailsDTO{" +
+                "contact='" + contact + '\'' +
+                ", contactType='" + contactType + '\'' +
+                '}';
+    }
 }
